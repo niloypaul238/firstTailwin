@@ -7,11 +7,13 @@
     <!-- taiwlin css cdn file   -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos file add animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <!-- nav section -->
-     <nav class=" bg-white/30 backdrop-blur-sm-lg p-2">
+     <nav class="fixed w-full top-0 z-2 bg-gray-200 p-2">
         <div class="container   mx-auto grid sm:grid-cols-4 items-center">
             <div class="col-span-2 grid grid-cols-1 text-center sm:grid-cols-3">
                 <div class="col-span-1 flex justify-center sm:block w-full text-center"><a href="" class="text-center"><img class="text-center" src="images/logo.svg" alt=""></a></div>
@@ -29,7 +31,7 @@
         </div>
      </nav>
      <!-- hero section -->
-      <header class="mt-15">
+      <header class="pt-29"  data-aos="zoom-in">
             <div class="container mx-auto">
                 <div class="hero sm:flex justify-center items-center">
                     <div class="sm:flex-1">
@@ -53,7 +55,7 @@
 
       <!-- main section -->
        <main class="mt-17">
-            <section id="components" class="bg-slate-200 p-8">
+            <section id="components" data-aos="fade-up" class="bg-slate-200 p-8">
                 <div class="container mx-auto sm:flex items-center">
                     <h1 class="flex-1 text-4xl font-bold it">Tailwind CSS UI Components for Modern Web Apps</h1>
                     <div class="flex-1 sm:flex gap-5">
@@ -65,13 +67,13 @@
             </section>
 
 
-            <section class="container mx-auto mt-18">
-                <div class=" mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+            <section class="container mx-auto mt-35">
+                <div class=" mx-auto mb-12 max-w-[510px] text-center lg:mb-20"  data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <p class="mb-2 block text-lg font-semibold text-[#669bbc]">Core Features</p>
                     <h2 class="text-4xl font-bold mb-2">Our Awesome Features</h2>
                     <p class="text-[#6c757d]">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
                 </div>
-                <div class="sm:grid grid-cols-4 gap-9">
+                <div class="sm:grid grid-cols-4 gap-9" data-aos="zoom-in-down">
                     <div class=" shadow-lg shadow-xl/10  p-2 flex flex-col justify-center text-center">
                         <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-15 mx-auto text-[#0d3b66]">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" /></svg>
@@ -118,13 +120,13 @@
             <section class="container mx-auto px-20 py-17">
                 <div>
                     <div class="sm:flex justify-between items-center gap-5">
-                        <div class="flex-1 relative ">
+                        <div class="flex-1 relative " data-aos="fade-right">
                             <img src="images/image-01.jpg" alt="">
                             <div class="absolute bottom-0 animate-bounce  rounded-tr-[40px] right-10 bg-[#02b3b3da] text-white p-7 text-2xl font-bold w-90">
                                 <h2>We make clean & professional design</h2>
                             </div>
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1" data-aos="fade-left">
                             <p class="text-xl font-bold text-[#b7b7a4] ">What We Do!</p>
                             <h3 class="text-5xl font-bold my-4 leading-14">We develop & create awesome website .</h3>
                             <div class="sm:flex my-4 gap-5">
@@ -148,15 +150,15 @@
                 </div>
             </section>
 
-            <section class="bg-[#edf2f4] sm:p-16">
+            <section class="bg-[#edf2f4] sm:p-16" >
                     <div class="container">
-                        <div class=" mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+                        <div class=" mx-auto mb-12 max-w-[510px] text-center lg:mb-20" data-aos="zoom-in">
                             <p class="mb-2 block text-lg font-semibold text-[#669bbc]">Our Team Members</p>
                             <h2 class="text-4xl font-bold mb-2">Our Creative Team</h2>
                             <p class="text-[#6c757d]">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
                         </div>
 
-                        <div class="sm:grid grid-cols-4 gap-5 ">
+                        <div class="sm:grid grid-cols-4 gap-5 " data-aos="zoom-in">
 
                             <div class="card relative shadow-[4px] text-center  mb-8 rounded-[5px] bg-white px-5 pb-10 pt-12 hover:bg-slate-200">
                                 <i class="fa-solid fa-quote-left text-3xl absolute left-0 "></i>
@@ -195,20 +197,15 @@
 
 
             <!-- review section  -->
-             <section class="mt-20 bg-slate-200 my-12 p-10">
+             <section class="mt-20 bg-slate-200 my-12 p-10" data-aos="zoom-in-down">
+
                 <div class="container costomarCards h-60">
-
-
-
                     <div class="costomarcard relative w-full md:w-1/2 text-center mx-auto p-10">
                         <span class="text-5xl absolute -top-4 -left-8">,,</span>
                             <h3 class="text-2xl underline underline-offset-6 text-red-700 font-bold">Farjana Sultan</h3>
                             <p>We are still a long way off from being able to state with perfect confidence what the Corona is. It is certainly a complex phenomenon, and the various streamers which we see are not, as was at one time imagined, a simple manifestation of one radiant light.</p>
                         <span class="text-5xl absolute bottom-4 -right-10">,,</span>
                     </div>
-
-
-                   
                 </div>
              </section>
 
@@ -216,7 +213,7 @@
               <section id="contuct" class="mt-17">
                     <div class="container mx-auto">
                         <div class="sm:flex justify-between">
-                            <div class="cotuctImg flex-1 ">
+                            <div class="cotuctImg flex-1 " data-aos="fade-right">
                                 <img class="rounded-tr-3xl rounded-bl-3xl" src="images/photo-1542744173-8e7e53415bb0.avif" alt="">
                             </div>
                             <div class="form flex-1 text-center ">
@@ -335,8 +332,21 @@
 </footer>
 
 
+
+
+
+        <!-- aos js file add to animation -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
        <!-- script js -->
         <script>
+
+            // aos code 
+             AOS.init();
+
+
+
+
             let formBox = document.querySelector('.formBox');
             let inputContuct = document.querySelector('.contuctInput');
             let costomarCards = document.querySelector('.costomarCards');
